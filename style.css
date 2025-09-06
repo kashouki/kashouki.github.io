@@ -1,0 +1,123 @@
+:root {
+    --bg-color: #ffffff;
+    --title-color: #121212;
+    --text-color: #333333;
+    --text2-color: #808080;
+}
+
+.dark {
+    --bg-color: #121212;
+    --title-color: #ffffff;
+    --text-color: #bebebe;
+    --text2-color: #606060;
+}
+
+#theme-toggle {
+    position: fixed;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+    line-height: 1.6;
+    background: var(--bg-color);
+    color: var(--title-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    top: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+p {
+    color: var(--text-color);
+}
+
+.socials {
+    margin-top: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.socials img {
+    width: 24px;
+    height: 24px;
+    margin: 0 0.5rem;
+    transition: opacity 0.1s;
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.about p {
+    margin-bottom: 1rem;
+}
+
+.experience-item h3, .experience-item div {
+    margin-bottom: 0.5rem;
+}
+
+.experience-item {
+    margin-bottom: 1.5rem;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.place {
+    font-weight: bold;
+}
+
+.date {
+    color: var(--text2-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    color: var(--text2-color);
+}
